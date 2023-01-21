@@ -1,0 +1,23 @@
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background: var(--color-bg);
+    padding: 1em;
+    border: 1px solid var(--border-color);
+    flex-wrap: wrap;
+    ul {
+        list-style: none;
+        display: inline-flex;
+        justify-content: space-between;
+    }
+
+    li + li {
+        margin-left: 0.5em;
+    }
+
+    .site-title {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+}

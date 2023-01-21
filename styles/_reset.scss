@@ -1,0 +1,27 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+/* Set core body defaults */
+body {
+    text-rendering: optimizespeed;
+    line-height: 1.5;
+    font-size: 16px;
+}

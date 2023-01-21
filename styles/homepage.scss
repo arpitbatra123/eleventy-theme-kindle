@@ -1,31 +1,54 @@
-@import "./common.scss";
+@import "global";
+@import "header";
 body {
-  text-transform: lowercase;
+    background-color: var(--page-bg);
 }
+main {
+    max-width: 60vw;
+    margin: 0 auto;
 
-.category {
-  margin-top: 25px;
-  margin-bottom: 10px;
-}
-
-.posts {
-  list-style: none;
-  .post {
-    margin-top: 16px;
-    line-height: 14px;
-    &-date {
-      font-size: 12px;
-      color: #585858;
+    @media (max-width: $breakpoint-md) {
+        max-width: unset;
     }
-  }
-}
+    .container {
+        border-left: 1px solid var(--border-color);
+        border-right: 1px solid var(--border-color);
+        height: 100vh;
+        background: var(--content-bg);
+        padding: 1em 2em;
+        @media (max-width: $breakpoint-md) {
+            padding: 1em;
+        }
 
-.name {
-  color: #253445;
-  font-size: large;
-  margin-bottom: 5px;
-}
+        .posts-container {
+            margin-top: 2rem;
+            .posts-title {
+                font-size: 16px;
+                font-weight: normal;
+                border-bottom: 1px solid var(--border-color);
+            }
+            .posts {
+                margin-top: 1em;
+                .post {
+                    display: flex;
+                    justify-content: space-between;
 
-p {
-  margin: 8px 0;
+                    &-link {
+                        border-bottom: 2px solid #d2d2d2;
+                        &:hover {
+                            border-bottom: unset;
+                        }
+                    }
+
+                    &-date {
+                        font-size: 16px;
+                        color: var(--date-color);
+                    }
+                }
+                .post + .post {
+                    margin-top: 0.3em;
+                }
+            }
+        }
+    }
 }

@@ -1,0 +1,29 @@
+@import "reset";
+@import url("https://rsms.me/inter/inter.css");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap");
+
+// Breakpoints
+$breakpoint-sm: "640px";
+$breakpoint-md: "768px";
+$breakpoint-lg: "1024px";
+$breakpoint-xl: "1280px";
+
+:root {
+    font-family: "Inter", sans-serif;
+    --page-bg: #eaeaea;
+    --color-bg: #f0f0f0;
+    --border-color: #dddccc;
+    --link-hover-color: #fcf7a2;
+    --content-bg: white;
+    --date-color: #585858;
+}
+
+a {
+    &:hover {
+        background: var(--link-hover-color);
+    }
+    padding: 2px;
+    border-radius: 2px;
+}

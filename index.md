@@ -1,8 +1,6 @@
 ---
 layout: homepage.liquid
-title: Horsin' Around
+title: TravelMag
 ---
 
-# Welcome to Hollywoo
-
-Hello. I am BoJack. Horseman, obviously
+This is TravelMag, an online magazine that's all about Travel. We have the latest travel updates and advice for the Indian traveller.
