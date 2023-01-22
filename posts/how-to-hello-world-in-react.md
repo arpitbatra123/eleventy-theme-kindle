@@ -1,5 +1,5 @@
 ---
-title: How to write a simple hello world component in React
+title: Hello World
 ---
 
 ``` js
