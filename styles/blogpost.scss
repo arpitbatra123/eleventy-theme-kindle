@@ -1,59 +1,52 @@
-@import './common.scss';
-@import './prism-theme.scss';
-.post-container {
-  margin-top: 32px;
-
-  header {
-    margin-bottom: 16px;
-    .post-date {
-      font-size: 14px;
-      color: #585858;
-    }
-  }
-
-  .content {
-    line-height: 22px;
-    h2 {
-      margin: 24px 0 8px;
-      font-weight: normal;
-      line-height: 36px;
-    }
-
-    h3 {
-      margin: 12px 0;
-      line-height: 28px;
-    }
-
-    p {
-      margin-bottom: 10px;
-    }
-
-    ul {
-      list-style-type: none;
-      margin-left: 18px;
-
-      & > li::before {
-        content: '–'; /* en dash here */
-        position: absolute;
-        margin-left: -1.1em;
-      }
-    }
-  }
-
-  .back-link {
-    margin: 16px 0 24px 0;
-  }
-
-  // Select all text wrapped in `` in markdown - generated a `code` tag without a language class
-  code:not([class*='language-']) {
-    padding: 0.2em;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    background: #f8f8f8;
-    border: 1px solid #dddddd;
-  }
+@import "./prism-theme.scss";
+@import "page";
+body {
+    background-color: var(--page-bg);
 }
 
 iframe {
-  padding: 16px 0;
+    padding: 16px 0;
+}
+
+main {
+    max-width: 60vw;
+    margin: 0 auto;
+
+    @media (max-width: $breakpoint-md) {
+        max-width: unset;
+    }
+
+    .post-container {
+        .post-title {
+            margin: 0;
+        }
+        .post-date {
+            font-size: 0.75em;
+            color: var(--date-color);
+            margin-bottom: 32px;
+            margin-top: 0px;
+        }
+        .content {
+            margin-top: 1.5rem;
+            ul {
+                list-style-type: none;
+                margin-left: 18px;
+
+                & > li::before {
+                    content: "–"; /* en dash here */
+                    position: absolute;
+                    margin-left: -1.1em;
+                }
+            }
+
+            // Select all text wrapped in `` in markdown - generated a `code` tag without a language class
+            code:not([class*="language-"]) {
+                padding: 0.2em;
+                padding-top: 1px;
+                padding-bottom: 1px;
+                background: #f8f8f8;
+                border: 1px solid #dddddd;
+            }
+        }
+    }
 }

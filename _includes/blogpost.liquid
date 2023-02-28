@@ -6,15 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description" content="{{ title }}" />
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="../../styles/blogpost.css" />
+    <link rel="stylesheet" href="/styles/blogpost.css" />
   </head>
   <body>
-    <div class="container post-container">
-      <h1>{{ title }}</h1>
-      <div class="content">{{ content }}</div>
-      <div class="back-link">
-        <a href="/">← Back</a>
+    <main>
+      {% include 'header' %}
+      <div class="container post-container">
+        <h1 class="post-title">{{ title }}</h1>
+        <span class="post-date">
+          {{ date | date: "%d %B %Y" }}
+        </span>
+        <div class="content">
+          {{ content }}
+        </div>
       </div>
-    </div>
+      {% include 'footer' %}
+    </main>
   </body>
 </html>

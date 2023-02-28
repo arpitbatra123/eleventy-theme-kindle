@@ -24,4 +24,18 @@ body {
     text-rendering: optimizespeed;
     line-height: 1.5;
     font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+img {
+    border: 8px solid var(--page-bg);
 }

@@ -1,11 +1,8 @@
 ---
 layout: page.liquid
-permalink: latest/index.html
+permalink: about/index.html
+title: About
 ---
-
-# Latest
-
-## About
 
 Welcome to Traveltryst, the ultimate destination for all travel enthusiasts out there! At Traveltryst, we aim to inspire, inform, and empower our readers to explore the world and create unforgettable memories.
 

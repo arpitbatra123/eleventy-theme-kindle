@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="/styles/latest.css" />
+    <link rel="stylesheet" href="/styles/about.css" />
   </head>
   <body>
     <main>
       {% include 'header' %}
       <div class="container">
+        <h1 class="page-title">{{ title }}</h1>
         {{ content }}
       </div>
       {% include 'footer' %}
