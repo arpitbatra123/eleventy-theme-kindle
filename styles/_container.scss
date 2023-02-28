@@ -1,0 +1,9 @@
+.container {
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    background: var(--content-bg);
+    padding: 1em 2em;
+    @media (max-width: $breakpoint-md) {
+        padding: 1em;
+    }
+}

@@ -1,0 +1,14 @@
+@import "page";
+body {
+    background-color: var(--page-bg);
+}
+main {
+    max-width: 60vw;
+    margin: 0 auto;
+
+    @media (max-width: $breakpoint-md) {
+        max-width: unset;
+    }
+    .container {
+    }
+}

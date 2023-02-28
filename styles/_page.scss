@@ -1,0 +1,16 @@
+@import "global";
+@import "header";
+@import "footer";
+@import "container";
+
+p + p {
+    margin-top: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 1em 0 0.2em 0;
+}
