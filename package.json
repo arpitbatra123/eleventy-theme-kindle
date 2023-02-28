@@ -14,10 +14,10 @@
   "author": "Arpit Batra (arpitbatra123@gmail.com)",
   "license": "MIT",
   "dependencies": {
-    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy": "^2.0.0",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
     "concurrently": "^7.6.0",
-    "sass": "^1.57.1"
+    "sass": "^1.58.3"
   }
 }
